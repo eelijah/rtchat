@@ -39,9 +39,8 @@ class RoomsViewController: UITableViewController {
             guard let self = self else { return }
             roomsSnapshot.documentChanges.forEach(self.handleChange)
         })
-        toolbarItems = [
-            UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRoomButtonPressed)),
-        ]
+        navigationItem.rightBarButtonItem =
+            UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addRoomButtonPressed))
     }
 
     @objc private func addRoomButtonPressed() {

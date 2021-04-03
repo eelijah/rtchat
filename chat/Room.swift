@@ -34,7 +34,7 @@ extension Room {
 
     var document: [String : Any] {
         var result: [String : Any] = [
-            "name": id
+            "name": name
         ]
         if let id = id {
             result["id"] = id
