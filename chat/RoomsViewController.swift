@@ -47,7 +47,7 @@ class RoomsViewController: UITableViewController {
         let alert = UIAlertController(title: "Add room", message: nil, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         let createAction = UIAlertAction(title: "Ok", style: .default, handler: { _ in
-            self.createRoom(name: "\(Int.random(in: 0..<100_000))")
+            self.createRoom(name: "hello")
         })
         alert.addAction(createAction)
         present(alert, animated: true)

@@ -1,7 +1,7 @@
 #  Real-time chat app
 
 Leftovers:
-- Set room name
+- A user definded room's name
 - Logout
 - Refactor: remove all exclamation marks
 
